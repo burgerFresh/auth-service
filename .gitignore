@@ -1,4 +1,46 @@
+# Игнорируем целевые папки
 target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Игнорируем Maven Wrapper, кроме jar файла
+!.mvn/wrapper/maven-wrapper.jar
+
+# Игнорируем файлы и папки, специфичные для STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# Игнорируем файлы и папки, специфичные для Eclipse
+# Eclipse Core
+.project
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Игнорируем файлы и папки, специфичные для IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Игнорируем файлы и папки, специфичные для NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Игнорируем настройки VS Code
+.vscode/
+
+# Игнорируем другие временные файлы
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -7,11 +49,3 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-# https://github.com/takari/maven-wrapper#usage-without-binary-jar
-.mvn/wrapper/maven-wrapper.jar
-
-# Eclipse m2e generated files
-# Eclipse Core
-.project
-# JDT-specific (Eclipse Java Development Tools)
-.classpath
